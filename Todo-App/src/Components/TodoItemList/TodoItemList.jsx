@@ -1,20 +1,16 @@
 import TodoItem from "../TodoItem/TodoItem";
 import "./TodoItemList.css";
-const TodoItemList = () => {
-  let Tasks = [
-    { TaskName: "Buy Milk", TaskDate: "2021-09-01" },
-    { TaskName: "Buy Eggs", TaskDate: "2021-09-02" },
-    { TaskName: "Buy Bread", TaskDate: "2021-09-03" },
-  ];
+const TodoItemList = (props) => {
+  const { Tasks } = props;
   return (
     <>
       <div className="todo-list">
         {Tasks.map((task) => {
           return (
             <TodoItem
-              key={task.TaskDate}
-              TaskName={task.TaskName}
-              TaskDate={task.TaskDate}
+              key={task.date}
+              TaskName={task.task}
+              TaskDate={task.date}
             />
           );
         })}
