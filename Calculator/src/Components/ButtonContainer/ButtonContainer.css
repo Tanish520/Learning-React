@@ -1,0 +1,9 @@
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    margin-right: 11%;
+}

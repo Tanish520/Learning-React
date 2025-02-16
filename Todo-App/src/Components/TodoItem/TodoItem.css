@@ -1,0 +1,22 @@
+.todo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    align-items: center;
+}
+
+.task {
+    width: 40%;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.date {
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    padding: 5px;
+}
