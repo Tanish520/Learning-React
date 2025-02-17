@@ -1,7 +1,7 @@
 import TodoItem from "../TodoItem/TodoItem";
 import "./TodoItemList.css";
 const TodoItemList = (props) => {
-  const { Tasks } = props;
+  const { Tasks , handleOnDelete} = props;
   return (
     <>
       <div className="todo-list">
@@ -9,8 +9,10 @@ const TodoItemList = (props) => {
           return (
             <TodoItem
               key={task.date}
-              TaskName={task.task}
-              TaskDate={task.date}
+              id = {task.id}
+              TaskName={task.TaskName}
+              TaskDate={task.Date}
+              handleOnDelete = {handleOnDelete}
             />
           );
         })}
