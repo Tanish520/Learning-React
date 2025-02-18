@@ -1,18 +1,18 @@
 import TodoItem from "../TodoItem/TodoItem";
 import "./TodoItemList.css";
 const TodoItemList = (props) => {
-  const { Tasks , handleOnDelete} = props;
+  const { Tasks, handleOnDelete } = props;
   return (
     <>
-      <div className="todo-list">
+      <div classNameNameNameNameName="todo-list">
         {Tasks.map((task) => {
           return (
             <TodoItem
               key={task.date}
-              id = {task.id}
+              id={task.id}
               TaskName={task.TaskName}
               TaskDate={task.Date}
-              handleOnDelete = {handleOnDelete}
+              handleOnDelete={handleOnDelete}
             />
           );
         })}

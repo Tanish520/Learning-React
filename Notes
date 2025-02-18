@@ -1,34 +1,34 @@
 React JS
+
 1. What is React.js?
-React.js is an open-source JavaScript library for building user interfaces, especially for single-page applications (SPAs) where UI updates dynamically without reloading the page. It was developed by Facebook (Meta) and is widely used for building interactive web applications.
+   React.js is an open-source JavaScript library for building user interfaces, especially for single-page applications (SPAs) where UI updates dynamically without reloading the page. It was developed by Facebook (Meta) and is widely used for building interactive web applications.
 
 2. Why Use React?
-•	Component-Based Architecture: UI is divided into reusable components, making development efficient.
-•	Virtual DOM: Uses a virtual representation of the DOM, reducing direct DOM manipulations and improving performance.
-•	One-Way Data Binding: Ensures a predictable data flow, making debugging easier.
-•	Fast Rendering: React updates only the changed parts of the UI, making it faster than traditional approaches.
-•	Strong Community & Ecosystem: A vast community and extensive libraries enhance development.
-•	Vite is a faster and more efficient alternative to traditional bundlers like Webpack. If you're starting a new React project, Vite is the recommended choice due to its speed, simplicity, and modern tooling.
- 
+   • Component-Based Architecture: UI is divided into reusable components, making development efficient.
+   • Virtual DOM: Uses a virtual representation of the DOM, reducing direct DOM manipulations and improving performance.
+   • One-Way Data Binding: Ensures a predictable data flow, making debugging easier.
+   • Fast Rendering: React updates only the changed parts of the UI, making it faster than traditional approaches.
+   • Strong Community & Ecosystem: A vast community and extensive libraries enhance development.
+   • Vite is a faster and more efficient alternative to traditional bundlers like Webpack. If you're starting a new React project, Vite is the recommended choice due to its speed, simplicity, and modern tooling.
 
 Key Folders & Files
 
 Node_modules/ (⚙️ Auto-Generated)
-•	Stores dependencies installed via npm install.
-•	Never modify it manually.
+• Stores dependencies installed via npm install.
+• Never modify it manually.
 
 Public/ (📁 Static Files)
-•	Contains index.html, where React mounts the app.
- index.html is the main HTML file in a React app.
+• Contains index.html, where React mounts the app.
+index.html is the main HTML file in a React app.
 ✔ It contains an empty <div id="root">, where React injects components dynamically.
 ✔ Helps React create a Single Page Application (SPA) without reloading the page.
 ✔ Loads the JavaScript bundles that contain React code.
 
-•	Used for assets like favicon.ico, logos, etc.
-•	Example index.html:
+• Used for assets like favicon.ico, logos, etc.
+• Example index.html:
 
 Src/ (💻 Main Code)
-•	Contains all React components and logic.
+• Contains all React components and logic.
 🔹 components/ – Reusable UI parts (buttons, navbar, etc.).
 🔹 pages/ – Full page components (e.g., Home, About, Contact).
 🔹 App.js – The main component where other components are combined.
@@ -37,16 +37,20 @@ Src/ (💻 Main Code)
 ✔ Can be used to wrap the app with providers (like Context API, Redux, etc.).
 
 Why is package.json Important?
-1.	Manages dependencies – Lists all npm packages used in the project.
-2.	Defines scripts – Commands for running, building, and testing the project.
-3.	Stores project metadata – Name, version, description, and author details.
+
+1. Manages dependencies – Lists all npm packages used in the project.
+2. Defines scripts – Commands for running, building, and testing the project.
+3. Stores project metadata – Name, version, description, and author details.
 
 The package-lock.json file is automatically created when you install packages using npm install. It locks the exact versions of the dependencies so that everyone using the project gets the same versions.
-________________________________________
+
+---
+
 🔹 Why is it Important?
-1.	Prevents version mismatches → Ensures the same package versions are installed for all developers.
-2.	Faster installs → Speeds up npm install by skipping unnecessary version checks.
-3.	Ensures stability → Avoids unexpected changes when reinstalling dependencies.
+
+1. Prevents version mismatches → Ensures the same package versions are installed for all developers.
+2. Faster installs → Speeds up npm install by skipping unnecessary version checks.
+3. Ensures stability → Avoids unexpected changes when reinstalling dependencies.
 
 What is JSX in React?
 JSX (JavaScript XML) is a syntax extension for JavaScript that lets you write HTML-like code inside JavaScript. React uses JSX to make it easier to create UI components.
@@ -65,7 +69,7 @@ A functional component is a simple JavaScript function that returns JSX to rende
 import React from "react";
 
 const Welcome = () => {
-  return <h1>Hello, React!</h1>;
+return <h1>Hello, React!</h1>;
 };
 
 export default Welcome;
@@ -74,17 +78,15 @@ export default Welcome;
 •It must start with a capital letter (Welcome, not welcome).
 •export default Welcome; allows us to use it in other files.
 
- Final Summary
+Final Summary
 ✔ Functional components are just functions returning JSX.
 ✔ Use props to pass data.
 ✔ Use hooks (useState, useEffect, etc.) to add features.
-✔ Preferred over class components because they are simpler and faster.
-
+✔ Preferred over classNameNameNameName components because they are simpler and faster.
 
 Rendering in React means converting a component’s JSX into actual HTML and updating the UI. React does this efficiently using the Virtual DOM and the Reconciliation Algorithm.
 
-
- Steps in Rendering a React Component
+Steps in Rendering a React Component
 1️⃣ React calls the component function
 2️⃣ JSX is converted to JavaScript (using Babel)
 3️⃣ Virtual DOM (VDOM) is updated
@@ -96,7 +98,7 @@ Rendering in React means converting a component’s JSX into actual HTML and upd
 Every time a component is used (<App />), React calls the function to get the output (JSX).
 
 const App = () => {
-  return <h1>Hello, React!</h1>;
+return <h1>Hello, React!</h1>;
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
@@ -118,8 +120,8 @@ React uses a Virtual DOM (VDOM), which is a lightweight copy of the real DOM.
 📌 Example Virtual DOM Object
 
 {
-  type: "h1",
-  props: { children: "Hello, React!" }
+type: "h1",
+props: { children: "Hello, React!" }
 }
 👉 This VDOM helps React track changes efficiently.
 
@@ -130,36 +132,35 @@ Compares it with the previous Virtual DOM (using a process called "Diffing").
 Finds the differences (Reconciliation).
 Updates only the changed parts in the Real DOM.
 
-
 What are Props in React?
 Props (short for "properties") are used to pass data from one component to another in React. They allow components to be reusable and dynamic.
 
- How Props Work?
+How Props Work?
 1️⃣ Parent Component sends data via props.
 2️⃣ Child Component receives props and uses them.
 
- Parent Component (App.js)
+Parent Component (App.js)
 
 import React from "react";
-import Greeting from "./Greeting";  // Import child component
+import Greeting from "./Greeting"; // Import child component
 
 const App = () => {
-  return <Greeting name="Tanish" />;
+return <Greeting name="Tanish" />;
 };
 
 export default App;
 
- Child Component (Greeting.js)
+Child Component (Greeting.js)
 
 import React from "react";
 
 const Greeting = (props) => {
-  return <h1>Hello, {props.name}!</h1>;
+return <h1>Hello, {props.name}!</h1>;
 };
 
 export default Greeting;
 
- Summary
+Summary
 ✔ Props allow data passing from parent to child.
 ✔ They make components reusable and dynamic.
 ✔ They are read-only (cannot be changed inside the child component).
@@ -171,3 +172,17 @@ What is State?
 ✅ Use useState(initialValue) to define and update state.
 ✅ State is local and private to component.
 ✅ React function that start with use is called as hooks.
+
+ReactDOM in React
+ReactDOM is a package in React that provides methods for interacting with the DOM (Document Object Model). It is used to render React components into the actual browser DOM.
+
+Feature React ReactDOM
+Purpose Used for creating UI components, managing state, and handling logic.
+Used for rendering components into the actual DOM.
+Main Usage
+Provides core React functionality like useState, useEffect, and JSX.
+Bridges React's virtual DOM with the browser's real DOM.
+Package Name react react-dom
+Import Example import React from "react";
+import ReactDOM from "react-dom/client";
+Key Methods useState(), useEffect(), createElement(), etc. createRoot(), render(), hydrateRoot()

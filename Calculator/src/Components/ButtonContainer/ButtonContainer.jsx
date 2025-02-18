@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
 import "./ButtonContainer.css";
-const ButtonContainer = ({handleOnClick}) => {
+const ButtonContainer = ({ handleOnClick }) => {
   const buttons = [
     "AC",
     "+/-",
@@ -20,13 +20,15 @@ const ButtonContainer = ({handleOnClick}) => {
     "+",
     "0",
     ".",
-    "="
+    "=",
   ];
   return (
     <>
-      <div className="btn-container">
+      <div classNameNameNameNameName="btn-container">
         {buttons.map((button) => {
-          return <Button onClick = {handleOnClick} key={button} character={button}  />;
+          return (
+            <Button onClick={handleOnClick} key={button} character={button} />
+          );
         })}
       </div>
     </>

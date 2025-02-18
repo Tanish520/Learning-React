@@ -1,14 +1,14 @@
 const Post = () => {
   return (
-    <div className="card" style={{ width: "18rem" }}>
-      <img src="..." className="card-img-top" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">
+    <div classNameNameNameNameName="card" style={{ width: "18rem" }}>
+      <img src="..." classNameNameNameNameName="card-img-top" alt="..." />
+      <div classNameNameNameNameName="card-body">
+        <h5 classNameNameNameNameName="card-title">Card title</h5>
+        <p classNameNameNameNameName="card-text">
           Some quick example text to build on the card title and make up the
           bulk of the content.
         </p>
-        <a href="#" className="btn btn-primary">
+        <a href="#" classNameNameNameNameName="btn btn-primary">
           Go somewhere
         </a>
       </div>

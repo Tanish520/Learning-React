@@ -13,17 +13,17 @@ function App() {
       setText("0");
     } else if (value === "=") {
       try {
-        setText(String(new Function(`return ${text}`)())); 
+        setText(String(new Function(`return ${text}`)()));
       } catch (error) {
-        setText(error); 
+        setText(error);
       }
     } else {
-      setText((prev) => (prev === "0" ? value : prev + value)); 
+      setText((prev) => (prev === "0" ? value : prev + value));
     }
   };
 
   return (
-    <div className="main-container">
+    <div classNameNameNameNameName="main-container">
       <Display text={text} />
       <ButtonContainer handleOnClick={handleOnClick} />
     </div>
@@ -31,4 +31,3 @@ function App() {
 }
 
 export default App;
-

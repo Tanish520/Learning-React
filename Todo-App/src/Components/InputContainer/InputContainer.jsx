@@ -17,33 +17,33 @@ const InputContainer = ({ handleOnAdd }) => {
     handleOnAdd(TodoName, DueDate);
     setTodoName("");
     setDueDate("");
-  }
- 
+  };
+
   return (
     <>
-      <div className="main-container">
-        <div className="header">
+      <div classNameNameNameNameName="main-container">
+        <div classNameNameNameNameName="header">
           <h1>TODO-APP</h1>
         </div>
-        <div className="input-container">
+        <div classNameNameNameNameName="input-container">
           <input
             onChange={handleInput}
             type="text"
             value={TodoName}
             placeholder="Enter a task"
-            className="todo-input"
+            classNameNameNameNameName="todo-input"
           />
           <input
             onChange={handleDate}
             value={DueDate}
             type="Date"
-            className="todo-date"
+            classNameNameNameNameName="todo-date"
             name="Date"
           />
           <button
             type="submit"
             onClick={handleOnClick}
-            className="btn btn-success"
+            classNameNameNameNameName="btn btn-success"
           >
             Add
           </button>
